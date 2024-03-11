@@ -37,7 +37,7 @@ class HomeViewModel @Inject constructor(
 
             is HomeUiEvent.SendButtonPressed -> {
                 viewModelScope.launch {
-                    koreanOCRAIRepository.sendImage(event.imageBitmap)
+                    _answer.value = koreanOCRAIRepository.sendImage(event.imageBitmap)
                 }
             }
         }

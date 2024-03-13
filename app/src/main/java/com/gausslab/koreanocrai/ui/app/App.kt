@@ -10,6 +10,9 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.compose.NavHost
 import com.gausslab.koreanocrai.ui.screen.home.homeScreen
 import com.gausslab.koreanocrai.ui.screen.home.homeScreenRoute
+import com.gausslab.koreanocrai.ui.screen.labelling.labellingScreen
+import com.gausslab.koreanocrai.ui.screen.select.selectScreen
+import com.gausslab.koreanocrai.ui.screen.select.selectScreenRoute
 
 @Composable
 fun App(
@@ -25,9 +28,11 @@ fun App(
         ) {
             NavHost(
                 navController = appViewModel.navController,
-                startDestination = homeScreenRoute
+                startDestination = selectScreenRoute
             ){
+                selectScreen()
                 homeScreen()
+                labellingScreen()
             }
         }
     }

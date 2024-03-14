@@ -57,6 +57,7 @@ class HomeViewModel @Inject constructor(
                 _answer.value = PredictionResponse("", 0f)
             }
 
+            else -> {}
         }
     }
 }

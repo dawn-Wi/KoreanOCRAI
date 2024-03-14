@@ -77,7 +77,7 @@ fun HomeScreen(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(16.dp),
-            verticalArrangement = Arrangement.spacedBy(16.dp)
+            verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
             BoxWithConstraints(
                 modifier = Modifier
